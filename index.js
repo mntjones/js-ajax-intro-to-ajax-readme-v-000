@@ -5,3 +5,5 @@ function getRepositories() {
   
   req.send();
 }
+
+function showRes
