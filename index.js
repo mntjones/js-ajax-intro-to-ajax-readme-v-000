@@ -1,4 +1,3 @@
-
 function showRepositiories(event, data) {
   // set to XMLHttpRequest object that fired the event
   
@@ -7,6 +6,8 @@ function showRepositiories(event, data) {
 
 function getRepositories() {
   const req = new XMLHttpRequest();
+  
+  req.addEventListener("load", showRepositiories);
   
   req.open("GET", "https://api.github.com/users/octocat/repos");
   
