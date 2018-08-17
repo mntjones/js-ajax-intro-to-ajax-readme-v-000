@@ -1,4 +1,9 @@
 
+function showRepositiories(event, data) {
+  // set to XMLHttpRequest object that fired the event
+  
+  console.log(this.responseText);
+}
 
 function getRepositories() {
   const req = new XMLHttpRequest();
@@ -8,9 +13,4 @@ function getRepositories() {
   req.send();
 }
 
-function showRepositiories(event, data) {
-  // set to XMLHttpRequest object that fired the event
-  
-  console.log(this.responseText);
-}
 
