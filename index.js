@@ -6,4 +6,9 @@ function getRepositories() {
   req.send();
 }
 
-function showRes
+function showRepositiories(event, data) {
+  // set to XMLHttpRequest object that fired the event
+  
+  console.log(this.responseText);
+}
+
